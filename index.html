@@ -5,30 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imersao Alura</title>
-    <link rel="stylesheet" href="assets/CSS/styless.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/CSS/styless copy.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-    <header>
-        <h1>Pesquise<br>
-            Times paulistas na série A e B do Brasileirão
-        </h1>
-    </header>
-    <main>
-        <section>
-            <input type="text" placeholder="Digite o nome do atleta">
-            <button onclick="pesquisar()">
-                Pesquisar
-            </button>
-        </section>
-        <section class="resultados-pesquisa" id="resultados-pesquisa">
+    <header class="menu green-background">
+        <div class="main-content menu-content">
+
             
-        </section>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="overlay"></div>
+            <nav class="nav-menu show-nav-menu">
+               <h5>Campeonato Brasileiro A</h5>
+                <ul id="show-nav-menu-a">
+
+                </ul>
+                <h5>Campeonato Brasileiro B</h5>           
+                <ul id="show-nav-menu-b">
+
+                </ul>     
+            </nav>
+
+
+        <h1>
+            Clubes Campeonato Brasileiro
+        </h1>
+        <input class="buscar" placeholder="Buscar">
+        </button>
+        </div>
+    </header>
+
+    <section id='resultados-pesquisa' class="intro white-background section">
+
+    </section>
     </main>
     <footer>
-        <p> 2024 - Pesquisar. Todos os direitos reservados</p>
-        <p>Entre em contato com Eliel dev.elieltrindade@gmail.com</p>
+        <p> 2024 - Pesquisar. Todos os direitos reservados
+            <br>Entre em contato com dev.elieltrindade@gmail.com
+        </p>
     </footer>
     <script src="assets/JS/clubes.js"></script>
     <script src="/assets/JS/app.js"></script>

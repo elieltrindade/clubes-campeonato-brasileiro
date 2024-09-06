@@ -1,5 +1,6 @@
 let clubes = {
     corinthians: {
+        serie: 'a',
         nome: 'Corinthians',
         cor: '<span aria-label="uma bola de cor preta e outra na cor branca">⚫️⚪️</span>',
         escudo: '<img src="assets/IMG/corinthians.svg" alt="Escudo do Sport Club Corinthians Paulista, com uma âncora, remos e uma bandeira com as iniciais SCP e três estrelas, em um círculo com o nome completo do clube e o ano de fundação (1910).">',
@@ -14,11 +15,12 @@ let clubes = {
     },
 
     palmeiras: {
+        serie: 'a' ,
         nome: 'Palmeiras',
         cor: '<span aria-label="Uma bola na cor verde e outra na cor branca">🟢⚪️</span>',
         escudo: '<img src="assets/IMG/Palmeiras_logo.svg" alt="Escudo do Palmeiras, um círculo verde com uma letra P branca em um escudo no centro, rodeado pela palavra Palmeiras em branco e cinco estrelas.">',
         descricao: 'O Sociedade Esportiva Palmeiras, conhecido como Palmeiras, é um dos clubes de futebol mais tradicionais do Brasil. Fundado em 14 de agosto de 1914, na cidade de São Paulo, o clube possui uma vasta história e uma torcida apaixonada. O Palmeiras é conhecido por suas diversas conquistas e por ser um dos maiores clubes do futebol brasileiro.',
-        mascote: 'Periquito <i class="fa-solid fa-crow" aria-label="icone de uma passaro"></i> e Porco <i class="fa-solid fa-piggy-bank" aria-label="icone de um porco"></i>',
+        mascote: 'Periquito <i class="fa-solid fa-crow" aria-label="icone de uma passaro" style=color:#06aa48></i> e Porco <i class="fa-solid fa-piggy-bank" aria-label="icone de um porco" style=color:#06aa48></i>',
         estadio: 'Allianz Parque',
         titulos_brasileiro: '1967, 1972, 1993, 1994, 2016, 2018, 2022',
         titulos_libertadores: '1999, 2020, 2021',
@@ -27,6 +29,7 @@ let clubes = {
         link_alt: 'Site do Palmeiras'
     },
     redBullBragantino: {
+        serie: 'a',
         nome: 'Red Bull Bragantino',
         cor: '<span aria-label="bola na vermelha, uma na cor branca e outra na cor azul escuro">🔴⚪️🔵</span>',
         escudo: ' <img src="assets/IMG/red-bull-bragantino.svg" alt="Escudo do Red Bull Bragantino, com um escudo azul com as palavras Red Bull e Bragantino em branco, dois touros vermelhos em cada lado e uma bola de futebol amarela no centro.">',
@@ -40,6 +43,7 @@ let clubes = {
         link_alt: 'Site do Red Bull Bragantino'
     },
     saoPaulo: {
+        serie: 'a',
         nome: 'São Paulo Futebol Clube',
         cor: ' <span aria-label="Uma bola na cor pretra, uma na cor vermelha e outra na cor branca">⚫️🔴⚪️</span>',
         escudo: '<img src="assets/IMG/Brasao_do_Sao_Paulo_Futebol_Clube.svg"               alt="Escudo do São Paulo Futebol Clube, com um losango dividido em três partes: a superior com as letras SPFC em branco, a esquerda inferior na cor vermelha e a direita inferior na cor preta.">',
@@ -53,6 +57,7 @@ let clubes = {
         link_alt: 'Site do São Paulo Futebol Clube'
     },
     santos: {
+        serie: 'b',
         nome: 'Santos Futebol Clube',
         cor: '<span aria-label="bola na cor pretra e outra na cor branca">⚫️⚪️</span>',
         escudo: '<img src="assets/IMG/Santos_logo.svg" alt="Escudo do Santos Futebol Clube com um fundo listrado verticalmente em preto e branco, contendo as letras S.F.C. em destaque e uma bola no canto superior esquerdo.">',

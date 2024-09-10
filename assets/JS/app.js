@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const toggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('.nav-menu');
     const overlay = document.querySelector('.overlay');
+    const menuItems = document.querySelectorAll('.menu-items')
 
     // Alterna a visibilidade para o menu e overlay
     toggle.addEventListener('click', () => {
@@ -17,6 +18,22 @@ document.addEventListener('DOMContentLoaded', function () {
         nav.classList.remove('active');
         overlay.classList.remove('show-overlay');
     });
+
+    menuItems.forEach(item => {
+        item.addEventListener('click', () => {
+        nav.classList.remove('active');
+        overlay.classList.remove('show-overlay');
+    });
+    }
+
+    )
+
+
+    // menuItens.forEach('click', () => {
+        // nav.classList.remove('active');
+        // overlay.classList.remove('show-overlay');
+    // });
+
 });
 
 // ----------------------------------------------------------
@@ -27,7 +44,7 @@ let nomeClubeA = "";
 for (let clube of Object.values(clubes)) {
     if (clube.serie == "a") {
         nomeClubeA +=
-            `<li onclick="realizarBuscaAutomatica('${clube.nome}')"><a href="#${clube.nome}">${clube.nome}</a></li>`
+            `<li class='menu-items' onclick="realizarBuscaAutomatica('${clube.nome}')"><a href="#${clube.nome}">${clube.nome}</a></li>`
     }
 }
 ulA.innerHTML = nomeClubeA;
@@ -39,7 +56,7 @@ let nomeClubeB = "";
 for (let clube of Object.values(clubes)) {
     if (clube.serie == "b") {
         nomeClubeB +=
-            `<li onclick="realizarBuscaAutomatica('${clube.nome}')"><a href="#${clube.nome}">${clube.nome}</a></li>`
+            `<li class='menu-items' onclick="realizarBuscaAutomatica('${clube.nome}')"><a  href="#${clube.nome}">${clube.nome}</a></li>`
     }
 }
 ulB.innerHTML = nomeClubeB;
